@@ -276,7 +276,7 @@ RUN chmod +x /usr/local/bin/hbs
 COPY docker-unified/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# VOLUME ["/etc/bitwarden"]
+VOLUME ["/etc/bitwarden"]
 
 WORKDIR /app
 ENTRYPOINT ["/entrypoint.sh"]
